@@ -1,6 +1,15 @@
 #smallcat{
   display: none;
 }
+
+#bigscooby {
+  display: none;
+}
+
+#otherhair {
+  display: none;
+}
+
 body {
   background-color: #6699ff;
 }
@@ -46,11 +55,30 @@ body {
 .fancy {
   font-style: italic;
 }
-@media screen and (max-width: 768px) and (min-width: 600px){
+@media screen and (max-width: 768px){
   #cat{ display: none;
 
   }
   #smallcat{
   display: inherit;
   }
+}
+
+@media screen and (min-width: 2000px){
+  #smallscooby{
+    display: none;
+  }
+  #bigscooby{
+  display: inherit;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 2000px){
+  #brownhair {
+    display: none;
+  }
+  #otherhair {
+    display: inherit;
+  }
+
 }
