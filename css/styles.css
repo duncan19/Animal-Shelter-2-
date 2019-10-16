@@ -10,9 +10,66 @@
   display: none;
 }
 
-body {
-  background-color: #6699ff;
-}
+@media screen and (max-width: 768px){
+        body {
+
+         background-color: red;
+         -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+         -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+         animation-name: example;
+         animation-duration: 10s;
+          animation-iteration-count: 900000;
+        }
+        @keyframes example {
+          0%   {background-color: red;}
+          25%  {background-color: pink;}
+          50%  {background-color: orange;}
+          75% {background-color: purple;}
+          100% {background-color: red;}
+        }
+      }
+
+      @media screen and (min-width: 2000px){
+              body {
+
+               background-color: red;
+               -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+               -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+               animation-name: example;
+               animation-duration: 10s;
+                animation-iteration-count: 900000;
+              }
+              @keyframes example {
+                0%   {background-color: red;}
+                25%  {background-color: teal;}
+                50%  {background-color: brown;}
+                75% {background-color: gold;}
+                100% {background-color: red;}
+              }
+            }
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 2000px){
+        body {
+
+         background-color: red;
+         -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+         -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+         animation-name: example;
+         animation-duration: 10s;
+          animation-iteration-count: 900000;
+        }
+        @keyframes example {
+          0%   {background-color: red;}
+          25%  {background-color: yellow;}
+          50%  {background-color: blue;}
+          75% {background-color: green;}
+          100% {background-color: red;}
+        }
+      }
 .column{
   border: solid black;
   width: 27%;
