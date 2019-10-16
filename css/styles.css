@@ -1,3 +1,6 @@
+#smallcat{
+  display: none;
+}
 body {
   background-color: #6699ff;
 }
@@ -42,4 +45,12 @@ body {
 
 .fancy {
   font-style: italic;
+}
+@media screen and (max-width: 768px) and (min-width: 600px){
+  #cat{ display: none;
+
+  }
+  #smallcat{
+  display: inherit;
+  }
 }
